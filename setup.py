@@ -6,7 +6,7 @@ def read(*parts):
     return codecs.open(path.join(path.dirname(__file__), *parts),
                        encoding="utf-8").read()
 
-setup(name='RawSocketFormatter'
+setup(name='RawSocketFormatter',
       version='0.1',
       description='Raw socket formatter for Python logging',
       long_description=read('README.rst'),
