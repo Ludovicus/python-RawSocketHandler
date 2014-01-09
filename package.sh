@@ -1,10 +1,10 @@
 #!/bin/bash
 
 GIT_FETCH_ORIGIN=`git remote -v | grep -E 'origin.*fetch' | awk '{print $2}'`
-GIT_REPO = "git@github.com:Ludovicus/python-RawSocketHandler.git"
+GIT_REPO="git@github.com:Ludovicus/python-RawSocketHandler.git"
 PYPI="$1"; [[ -z $PYPI ]] && PYPI=cargometrics
 
-if [ $GIT_FETCH_ORIGIN == "$GIT_REPO ]; then
+if [ $GIT_FETCH_ORIGIN == "$GIT_REPO" ]; then
   echo "Assembling a small crane"
   function build_python {
       TIMEOUT=100
