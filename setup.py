@@ -6,9 +6,9 @@ def read(*parts):
     return codecs.open(path.join(path.dirname(__file__), *parts),
                        encoding="utf-8").read()
 
-setup(name='RawSocketFormatter',
-      version='0.1',
-      description='Raw socket formatter for Python logging',
+setup(name='RawSocketHandler',
+      version='0.2',
+      description='Raw socket handler for Python logging',
       long_description=read('README.rst'),
       url='https://github.com/Ludovicus/python-RawSocketHandler',
       author='Luis F. Ortiz',
@@ -22,6 +22,6 @@ setup(name='RawSocketFormatter',
           'License :: OSI Approved :: MIT License',
           'Natural Language :: English',
           'Programming Language :: Python',
-          'Programming Language :: Python :: 3'
+          'Programming Language :: Python :: 2'
       ],
       zip_safe=False)
